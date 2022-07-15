@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/normal.css">
     <link rel="icon" href="/img/as5zr-ummxa-002.ico">
+    <link rel="stylesheet" href="/css/font.css">
     
 </head>
 <body>
@@ -15,18 +16,37 @@
         <img src="/img/logo01.png" alt="台通Logo">
     </header>
     <nav>
-        <div>
+        <div class="nav1">
             <li>Home</li>
             <li>最新Podcast</li>
             <li>近期活動</li>
             <li>廠商合作</li>
             <li>聯絡我們</li>
         </div>
-        <div>訂閱 台灣通勤第一品牌 commuteforme</div>
+        <div class="nav2">訂閱 台灣通勤第一品牌 <span>commuteforme</span></div>
     </nav>
     <main>
-        <div>
-            <img src="/img/01.jpg" alt="封面圖">
+        <!-- width:980 -->
+    <div class="carousel1">
+        <ul class="slides"> 
+            <!-- 加按鈕進去-input input type="radio" id="" name="" checked-->
+            <input type="radio" id="control-1" name="control" checked>
+            <input type="radio" id="control-2" name="control" checked>
+            <input type="radio" id="control-3" name="control" checked>
+
+            <li><img src="/img/1280-01.jpg" alt="封面圖"></li>
+            <li><img src="/img/1280-02.jpg" alt="封面圖"></li>
+            <li><img src="/img/1280-04.jpg" alt="封面圖"></li>
+
+            <!-- <加入 label for="對應-input的id"> -->
+            <div class="controls-visble">
+                <label for="control-1"></label>
+                <label for="control-2"></label>
+                <label for="control-3"></label>
+            </div>
+        </ul>   
+
+    </div>    
             <div>影片區</div>
         </div>    
     </main>
