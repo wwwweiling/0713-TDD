@@ -1,0 +1,56 @@
+/*滿版高度-100vh*/
+.banner{height:100vh;
+    width:100%;
+    /* background-color:;*/
+    /*background:linear-gradient()漸層+url圖片*/
+    /* 多重背景寫法1.linear-gradient 2.url */
+    background:
+        linear-gradient(130deg,#95D7AE, #A9FDAC 50%,transparent 50%)center center / 100% 100%,
+        url(./img/1.jpg) right center / auto 100% 
+
+
+}
+
+/*設定高度，看要不要固定寬度，margin設0水平置中*/
+.container{
+    height: 100%;
+    margin: auto;
+    width: 1200px;
+}
+
+/*設定高度/垂直置中/
+flex-start使滿版線段右靠就不會有滿版線條了*/
+.banner-txt{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.banner-txt h1{
+    font-size: 70px;
+    height: 80px;
+    /* color: #627264; */
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.banner-txt h2{
+    font-size :28px;
+    padding:5px 0;
+    border-bottom: 1px solid black;
+
+}
+.banner-txt h3{
+    font-size: 20px;
+    padding:5px 0;
+
+}
+
+.banner-txt p{
+    font-size: 16px;
+    padding:5px 0;
+    line-height: 20px;
+
+    
+}
+
