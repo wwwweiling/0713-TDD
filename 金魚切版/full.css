@@ -6,7 +6,9 @@
     /* 多重背景寫法1.linear-gradient 2.url */
     background:
         linear-gradient(130deg,#95D7AE, #A9FDAC 50%,transparent 50%)center center / 100% 100%,
-        url(./img/1.jpg) right center / auto 100% 
+        url(./img/1.jpg) right center / auto 100% ;
+        font-family: sans-serif;
+        
 
 
 }
@@ -28,29 +30,40 @@ flex-start使滿版線段右靠就不會有滿版線條了*/
     align-items:flex-start;
 }
 .banner-txt h1{
-    font-size: 70px;
-    height: 80px;
+    font-size: 80px;
+    height: 100px;
     /* color: #627264; */
-    font-weight: bold;
+    font-weight: 800;
     letter-spacing: 2px;
 }
 .banner-txt h2{
     font-size :28px;
-    padding:5px 0;
     border-bottom: 1px solid black;
+    
 
 }
 .banner-txt h3{
     font-size: 20px;
     padding:5px 0;
+    font-weight:bolder;
 
 }
 
 .banner-txt p{
     font-size: 16px;
     padding:5px 0;
-    line-height: 20px;
+    line-height: 25px;
 
     
 }
+
+@keyframes txt-h1 {
+  
+
+.banner-txt h1{
+    /* overflow: hidden; */
+    animation-name: txt-h1;
+    animation-duration: 3s;
+}
+
 
